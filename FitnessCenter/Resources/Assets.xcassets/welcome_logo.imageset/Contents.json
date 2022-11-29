@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "5dff597ee7d7ce19f57236ab.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "gantelnyy-ryad-alex-dv182-2-5-25kg-10-par_b69r-wj.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
