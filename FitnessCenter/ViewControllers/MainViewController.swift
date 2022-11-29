@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Тестовое сообщение для комманды"
+        print("Тестовое сообщение для комманды")
     }
 
 
