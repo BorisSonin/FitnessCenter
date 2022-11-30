@@ -465,58 +465,72 @@
             </objects>
             <point key="canvasLocation" x="286" y="-261"/>
         </scene>
-        <!--View Controller-->
+        <!--About Club View Controller-->
         <scene sceneID="94b-Ct-8g8">
             <objects>
-                <viewController id="ym8-sQ-LrY" sceneMemberID="viewController">
+                <viewController id="ym8-sQ-LrY" customClass="AboutClubViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xg-nS-Fyd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Инфо по школе, скролл тренеров/сотрудников - по типу трек листа задания с открыванием инфо, достижения клуба и тд" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrz-Gq-wLq">
-                                <rect key="frame" x="79" y="369" width="234" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-kd-Isb">
                                 <rect key="frame" x="48" y="510" width="281" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Комманда клуба"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Комманда разработчиков"/>
                                 <connections>
                                     <segue destination="rz1-AV-PXd" kind="presentation" id="Oh2-bp-YwB"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l9d-DH-Sgp">
-                                <rect key="frame" x="16" y="59" width="361" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="О нас" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-z8-6UI">
-                                <rect key="frame" x="109" y="210" width="176" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WY1-lP-l2c">
+                                <rect key="frame" x="16" y="103" width="361" height="630"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l9d-DH-Sgp">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="193"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="193" id="iE2-tx-A2t"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О нас" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-z8-6UI">
+                                        <rect key="frame" x="0.0" y="213" width="361" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some text about fitnes club" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aom-30-TwT">
+                                        <rect key="frame" x="0.0" y="269" width="361" height="361"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lfx-gf-HOK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="lfx-gf-HOK" firstAttribute="trailing" secondItem="2CH-kd-Isb" secondAttribute="trailing" constant="46" id="B7G-M3-QPv"/>
-                            <constraint firstItem="lfx-gf-HOK" firstAttribute="bottom" secondItem="2CH-kd-Isb" secondAttribute="bottom" constant="102" id="g4l-nK-Bat"/>
-                            <constraint firstItem="2CH-kd-Isb" firstAttribute="leading" secondItem="lfx-gf-HOK" secondAttribute="leading" constant="48" id="ydF-cb-tc7"/>
+                            <constraint firstItem="2CH-kd-Isb" firstAttribute="centerX" secondItem="8Xg-nS-Fyd" secondAttribute="centerX" id="1Qb-kg-DUb"/>
+                            <constraint firstItem="lfx-gf-HOK" firstAttribute="bottom" secondItem="2CH-kd-Isb" secondAttribute="bottom" constant="20" id="FXW-ne-lB6"/>
+                            <constraint firstItem="WY1-lP-l2c" firstAttribute="leading" secondItem="lfx-gf-HOK" secondAttribute="leading" constant="16" id="U64-IS-fVU"/>
+                            <constraint firstItem="lfx-gf-HOK" firstAttribute="trailing" secondItem="WY1-lP-l2c" secondAttribute="trailing" constant="16" id="ffb-MY-nA3"/>
+                            <constraint firstItem="2CH-kd-Isb" firstAttribute="top" secondItem="WY1-lP-l2c" secondAttribute="bottom" constant="30" id="kdc-2v-OJQ"/>
+                            <constraint firstItem="WY1-lP-l2c" firstAttribute="top" secondItem="lfx-gf-HOK" secondAttribute="top" id="wKf-ee-swk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="boq-gf-WL2"/>
+                    <connections>
+                        <outlet property="aboutClub" destination="aom-30-TwT" id="KMY-PN-PKt"/>
+                        <outlet property="imageClub" destination="l9d-DH-Sgp" id="kQj-HN-L8u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UX4-bo-IbA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="934" y="-261"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Команда разработчиков-->
         <scene sceneID="13t-FP-fXq">
             <objects>
-                <tableViewController id="RCq-Gz-IKK" sceneMemberID="viewController">
+                <tableViewController id="RCq-Gz-IKK" customClass="TeamClubTableViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="iek-aY-1ve">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -536,7 +550,7 @@
                             <outlet property="delegate" destination="RCq-Gz-IKK" id="oJA-3O-hAS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="5Cv-rS-4Vg"/>
+                    <navigationItem key="navigationItem" title="Команда разработчиков" id="5Cv-rS-4Vg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gc8-7d-8Rs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -546,6 +560,7 @@
         <scene sceneID="IP5-gT-EW0">
             <objects>
                 <navigationController id="rz1-AV-PXd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aET-sJ-2Sq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Azn-YI-E8S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -656,6 +671,9 @@
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <image name="welcome_logo" width="500" height="500"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
