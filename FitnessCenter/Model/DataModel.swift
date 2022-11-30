@@ -8,45 +8,41 @@
 // MARK: - Основные данные приложения
 struct ProgrammName {
     let nameProgramm: String
-    let kindOfProgramm: KindOfProgramm
     let desctiption: String
     let time: String
-    let complexity: Complexity
+    let kindOfProgramm: String
+    let complexity: String
 }
 
-enum Complexity: String {
-    case any = "Любой"
-    case low = "Начальный"
-    case middle = "Средний"
-    case high = "Продвинутый"
-}
-
-enum KindOfProgramm: String {
-    case rehabilitation = "Пройти Реабилитацию"
-    case dance = "Танцевать"
-    case stamina = "Выносливость"
-    case loseWeight = "Похудеть"
-}
-
-// MARK: - Данный для входа в программу
-struct Person {
-    let name: String
-    let surname: String
-    let phone: String
-    let email: String
-    
-    var fullName: String {
-        "\(name) \(surname)"
-    }
-}
-// MARK: - Команда разработки программы
-struct teamProg {
-    let name: String
-    let surname: String
-    let phone: String
-    let email: String
-    
-    var fullName: String {
-        "\(name) \(surname)"
+// MARK: - Расширения для структур/создание экземпляров
+extension ProgrammName {
+    static func getProgrammName() -> [ProgrammName] {
+        var programmName: [ProgrammName] = []
+        
+        let nameProgramm = DataStore.shared.nameProgramm
+        let desctiption = DataStore.shared.description
+        let time = DataStore.shared.time
+        let complexity = DataStore.shared.complexity
+        let kindOfProgramm = DataStore.shared.kindOfProgramm
+        
+        
+        let iterationCount = min(
+            nameProgramm.count,
+            desctiption.count,
+            time.count,
+            complexity.count,
+            kindOfProgramm.count
+        )
+        
+        for index in 0..<iterationCount {
+            programmName.append(ProgrammName(nameProgramm: nameProgramm[index],
+                                             desctiption: desctiption[index],
+                                             time: time[index],
+                                             kindOfProgramm:kindOfProgramm[index],
+                                             complexity: complexity[index]
+                                            ))
+        }
+        return programmName
+        
     }
 }
