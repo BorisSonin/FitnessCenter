@@ -120,6 +120,7 @@
 				5F32D69F29372BDC00E00391 /* DataModel.swift */,
 			);
 			name = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7FEC314C29338549008ED057 /* Services */ = {
@@ -127,7 +128,7 @@
 			children = (
 				5F3A0A89293690AC00B28B75 /* DataStore.swift */,
 			);
-			name = Services;
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
