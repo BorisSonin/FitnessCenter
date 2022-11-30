@@ -207,10 +207,17 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="YO5-ss-aKp">
+                                <rect key="frame" x="67" y="466" width="258" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YO5-ss-aKp" secondAttribute="height" multiplier="258:245" id="WkM-qe-TjY"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VfU-ia-2hb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="YO5-ss-aKp" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="67" id="2r2-uQ-tj2"/>
                             <constraint firstItem="nUm-84-mxJ" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="16" id="3ox-Pi-5eL"/>
                             <constraint firstItem="nUm-84-mxJ" firstAttribute="top" secondItem="VfU-ia-2hb" secondAttribute="top" id="6o6-Ki-isf"/>
                             <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="nUm-84-mxJ" secondAttribute="trailing" constant="16" id="BG7-Lh-aea"/>
@@ -218,7 +225,9 @@
                             <constraint firstItem="VfU-ia-2hb" firstAttribute="bottom" secondItem="iaB-e7-20e" secondAttribute="bottom" constant="16" id="IoV-lj-72U"/>
                             <constraint firstItem="WDE-Hr-XHi" firstAttribute="top" secondItem="xNN-Rn-Fcv" secondAttribute="bottom" constant="31" id="OCq-HZ-gbO"/>
                             <constraint firstItem="WDE-Hr-XHi" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="16" id="iHI-41-D6E"/>
+                            <constraint firstItem="YO5-ss-aKp" firstAttribute="top" secondItem="WDE-Hr-XHi" secondAttribute="bottom" constant="31.333333333333371" id="mdq-x6-5z5"/>
                             <constraint firstItem="xNN-Rn-Fcv" firstAttribute="top" secondItem="nUm-84-mxJ" secondAttribute="bottom" constant="8" symbolic="YES" id="nn6-wY-Czt"/>
+                            <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="YO5-ss-aKp" secondAttribute="trailing" constant="68" id="ph1-oW-HSJ"/>
                             <constraint firstItem="xNN-Rn-Fcv" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="108" id="rbx-WA-oS7"/>
                             <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="WDE-Hr-XHi" secondAttribute="trailing" constant="16" id="tOq-gB-RCY"/>
                             <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="iaB-e7-20e" secondAttribute="trailing" constant="16" id="uLr-JU-fzu"/>
@@ -505,6 +514,7 @@
     </scenes>
     <resources>
         <image name="Image" width="1680" height="472"/>
+        <image name="map" width="1156" height="1031"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <image name="welcome_logo" width="500" height="500"/>
