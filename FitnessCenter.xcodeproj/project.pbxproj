@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F32D6A029372BDC00E00391 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32D69F29372BDC00E00391 /* DataModel.swift */; };
+		5F3A0A8A293690AC00B28B75 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A0A89293690AC00B28B75 /* DataStore.swift */; };
 		7F873529292CC23C0022E19D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F873528292CC23C0022E19D /* AppDelegate.swift */; };
 		7F87352B292CC23C0022E19D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87352A292CC23C0022E19D /* SceneDelegate.swift */; };
 		7F87352D292CC23C0022E19D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87352C292CC23C0022E19D /* MainViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F32D69F29372BDC00E00391 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		5F3A0A89293690AC00B28B75 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		7F873525292CC23C0022E19D /* FitnessCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F873528292CC23C0022E19D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F87352A292CC23C0022E19D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		7FEC314B29338539008ED057 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5F32D69F29372BDC00E00391 /* DataModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 		7FEC314C29338549008ED057 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5F3A0A89293690AC00B28B75 /* DataStore.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -195,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F32D6A029372BDC00E00391 /* DataModel.swift in Sources */,
+				5F3A0A8A293690AC00B28B75 /* DataStore.swift in Sources */,
 				7FEC31502933A454008ED057 /* ScheduleVC.swift in Sources */,
 				7F87352D292CC23C0022E19D /* MainViewController.swift in Sources */,
 				7FEC314E2933A414008ED057 /* ProgrammVC.swift in Sources */,
