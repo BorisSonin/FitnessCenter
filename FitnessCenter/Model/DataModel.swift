@@ -7,11 +7,13 @@
 
 // MARK: - Основные данные приложения
 struct ProgrammName {
-    let nameProgramm: String
-    let desctiption: String
-    let time: String
     let kindOfProgramm: String
-    let complexity: String
+    let danceProgram: String
+    let slimmingProgram: String
+    let fightingArtsProgram: String
+    let gymProgram: String
+    let swimmingProgram: String
+    
 }
 
 // MARK: - Расширения для структур/создание экземпляров
@@ -19,27 +21,28 @@ extension ProgrammName {
     static func getProgrammName() -> [ProgrammName] {
         var programmName: [ProgrammName] = []
         
-        let nameProgramm = DataStore.shared.nameProgramm
-        let desctiption = DataStore.shared.description
-        let time = DataStore.shared.time
-        let complexity = DataStore.shared.complexity
         let kindOfProgramm = DataStore.shared.kindOfProgramm
-        
+        let danceProgram = DataStore.shared.danceProgramm
+        let slimmingProgram = DataStore.shared.slimmingProgramm
+        let fightingArtsProgram = DataStore.shared.fightingArtsProgramm
+        let gymProgram = DataStore.shared.gymProgramm
+        let swimmingProgram = DataStore.shared.swimmingProgramm
         
         let iterationCount = min(
-            nameProgramm.count,
-            desctiption.count,
-            time.count,
-            complexity.count,
+            gymProgram.count,
+            danceProgram.count,
+            fightingArtsProgram.count,
+            swimmingProgram.count,
             kindOfProgramm.count
         )
         
         for index in 0..<iterationCount {
-            programmName.append(ProgrammName(nameProgramm: nameProgramm[index],
-                                             desctiption: desctiption[index],
-                                             time: time[index],
-                                             kindOfProgramm:kindOfProgramm[index],
-                                             complexity: complexity[index]
+            programmName.append(ProgrammName(kindOfProgramm: kindOfProgramm[index],
+                                             danceProgram: danceProgram[index],
+                                             slimmingProgram: swimmingProgram[index],
+                                             fightingArtsProgram: fightingArtsProgram[index],
+                                             gymProgram: gymProgram[index],
+                                             swimmingProgram: slimmingProgram[index]
                                             ))
         }
         return programmName
