@@ -66,7 +66,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="О клубе"/>
                                                 <connections>
-                                                    <segue destination="ym8-sQ-LrY" kind="presentation" modalPresentationStyle="fullScreen" id="bJ7-L1-fLd"/>
+                                                    <segue destination="ym8-sQ-LrY" kind="presentation" id="bJ7-L1-fLd"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -477,11 +477,11 @@
             <objects>
                 <viewController id="ym8-sQ-LrY" customClass="AboutClubViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xg-nS-Fyd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-kd-Isb">
-                                <rect key="frame" x="44.5" y="612.5" width="286.5" height="34.5"/>
+                                <rect key="frame" x="44.5" y="592.5" width="286.5" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Комманда разработчиков"/>
                                 <connections>
@@ -504,7 +504,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some text about fitnes club" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aom-30-TwT">
-                                <rect key="frame" x="16" y="269" width="343" height="309"/>
+                                <rect key="frame" x="16" y="269" width="343" height="289"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
