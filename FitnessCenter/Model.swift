@@ -11,7 +11,9 @@ struct Team {
     let fullName: String
     let profession: String
     
-    var photo: String {"Boris Sonin"}
+    var photo: String {
+        "\(fullName)"
+    }
 }
 
 extension Team {
@@ -20,7 +22,7 @@ extension Team {
             Team(fullName: "Алишер Маликов", profession: "Team Lead, iOS разработчик \n+7(999)123-45-67"),
             Team(fullName: "Игорь Привалихин" , profession: "iOS разработчик \n+7(999)321-54-45"),
             Team(fullName: "Борис Сонин", profession: "iOS разработчик \n+7(999)654-55-55"),
-            Team(fullName: "Савелий", profession: "iOS разработчик \n+7(999)333-55-44")
+            Team(fullName: "Савелий Русинов", profession: "iOS разработчик \n+7(999)333-55-44")
         ]
     }
 }
