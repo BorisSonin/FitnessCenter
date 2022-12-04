@@ -32,7 +32,6 @@ class ContactVC: UIViewController {
     }
 }
 
-
 // MARK: - Extension
 extension ContactVC {
     private func showAlert(withTitle title: String, andMessage message: String) {
