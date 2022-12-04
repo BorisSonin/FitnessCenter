@@ -27,7 +27,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello world")
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
