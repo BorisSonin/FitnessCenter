@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WvP-1J-Wcs">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="GLf-D2-Xe9" customClass="MainViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3sc-8c-cNJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Fvv-TE-B5x">
-                                <rect key="frame" x="136" y="65" width="48" height="463"/>
+                                <rect key="frame" x="136" y="659" width="142" height="163"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BW1-jA-5lN">
-                                        <rect key="frame" x="0.0" y="0.0" width="48" height="359.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="119.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIn-Iy-fSD">
-                                                <rect key="frame" x="1" y="0.0" width="46.5" height="134.5"/>
+                                                <rect key="frame" x="11.5" y="0.0" width="119.5" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Программы"/>
                                                 <connections>
@@ -31,7 +31,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eat-eA-Rt3">
-                                                <rect key="frame" x="2" y="142.5" width="44" height="114.5"/>
+                                                <rect key="frame" x="11" y="42.5" width="120" height="34.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Расписание"/>
                                                 <connections>
@@ -39,7 +39,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oL-I6-0Ly">
-                                                <rect key="frame" x="1" y="265" width="46.5" height="94.5"/>
+                                                <rect key="frame" x="10.5" y="85" width="121" height="34.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="121" id="dCo-f7-nbc"/>
                                                 </constraints>
@@ -49,7 +49,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-3Q-abD">
-                                        <rect key="frame" x="0.0" y="368.5" width="48" height="94.5"/>
+                                        <rect key="frame" x="0.0" y="128.5" width="142" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="О клубе"/>
                                         <connections>
@@ -59,7 +59,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_logo" translatesAutoresizingMaskIntoConstraints="NO" id="JKs-nm-Y5k">
-                                <rect key="frame" x="16" y="102" width="288" height="500"/>
+                                <rect key="frame" x="16" y="150" width="382" height="500"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Asb-Gh-mdJ"/>
@@ -96,7 +96,7 @@
             <objects>
                 <viewController id="jFf-0X-Vlk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y2F-QY-OHn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Личные достижения, и можно добавить калькулятор весовой нормы (рост, вес) и др данные. Поделить на segmtnted Control" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjI-27-scr">
@@ -134,23 +134,23 @@
             <objects>
                 <viewController id="mcG-A3-Ze2" customClass="ContactVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="URU-8p-sHK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="nUm-84-mxJ">
-                                <rect key="frame" x="16" y="44" width="288" height="95"/>
+                                <rect key="frame" x="16" y="92" width="382" height="126"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nUm-84-mxJ" secondAttribute="height" multiplier="361:119" id="2GH-Aa-dcW"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контакты" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNN-Rn-Fcv">
-                                <rect key="frame" x="108" y="147" width="104" height="24"/>
+                                <rect key="frame" x="108" y="226" width="198" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WDE-Hr-XHi">
-                                <rect key="frame" x="16" y="187" width="288" height="145"/>
+                                <rect key="frame" x="16" y="266" width="382" height="145"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Москва" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ni-JN-UU3">
                                         <rect key="frame" x="0.0" y="0.0" width="63" height="20.5"/>
@@ -191,16 +191,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y6N-FF-KbW">
-                                <rect key="frame" x="66" y="497" width="188" height="55"/>
+                                <rect key="frame" x="66" y="791" width="282" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказать обратный звонок!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-f3-Ynp">
-                                        <rect key="frame" x="0.0" y="0.0" width="188" height="20.5"/>
+                                        <rect key="frame" x="32" y="0.0" width="218.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tj-Al-LyP">
-                                        <rect key="frame" x="70.5" y="20.5" width="47" height="34.5"/>
+                                        <rect key="frame" x="117.5" y="20.5" width="47" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="☎️"/>
                                         <connections>
@@ -209,6 +209,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="vms-Qv-4Wy">
+                                <rect key="frame" x="52" y="445" width="310" height="286"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="8Da-37-k6f"/>
+                                    <constraint firstAttribute="width" secondItem="vms-Qv-4Wy" secondAttribute="height" multiplier="155:143" id="eVs-Mi-dyK"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VfU-ia-2hb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -219,6 +226,9 @@
                             <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="xNN-Rn-Fcv" secondAttribute="trailing" constant="108" id="CiF-5R-ELr"/>
                             <constraint firstItem="y6N-FF-KbW" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="66" id="DpT-dh-bL6"/>
                             <constraint firstItem="WDE-Hr-XHi" firstAttribute="top" secondItem="xNN-Rn-Fcv" secondAttribute="bottom" constant="16" id="OCq-HZ-gbO"/>
+                            <constraint firstItem="vms-Qv-4Wy" firstAttribute="centerY" secondItem="URU-8p-sHK" secondAttribute="centerY" constant="140" id="Uiq-km-GMV"/>
+                            <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="vms-Qv-4Wy" secondAttribute="trailing" constant="52" id="VWT-UD-WAU"/>
+                            <constraint firstItem="vms-Qv-4Wy" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="52" id="bqH-U8-8Uc"/>
                             <constraint firstItem="WDE-Hr-XHi" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="16" id="iHI-41-D6E"/>
                             <constraint firstItem="VfU-ia-2hb" firstAttribute="bottom" secondItem="y6N-FF-KbW" secondAttribute="bottom" constant="16" id="nMz-jd-5Kg"/>
                             <constraint firstItem="xNN-Rn-Fcv" firstAttribute="top" secondItem="nUm-84-mxJ" secondAttribute="bottom" constant="8" symbolic="YES" id="nn6-wY-Czt"/>
@@ -236,14 +246,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUK-ZJ-xuf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1531.875" y="-642.25352112676057"/>
+            <point key="canvasLocation" x="1530.4347826086957" y="-642.85714285714278"/>
         </scene>
         <!--Личный кабинет-->
         <scene sceneID="Iiw-gQ-CKT">
             <objects>
                 <viewController id="mGD-Xh-pXy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hnf-6p-hjO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X4J-db-axZ">
@@ -276,7 +286,7 @@
             <objects>
                 <viewController id="C8w-Va-SzQ" customClass="ProgrammVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xEF-a6-tnj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Программы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJd-pR-95c">
@@ -312,7 +322,7 @@
             <objects>
                 <viewController id="ytu-uk-COQ" customClass="ScheduleVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="luf-uD-cDI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Расписание" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVK-jY-DIe">
@@ -348,7 +358,7 @@
             <objects>
                 <viewController id="ym8-sQ-LrY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xg-nS-Fyd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Инфо по школе, скролл тренеров/сотрудников - по типу трек листа задания с открыванием инфо, достижения клуба и тд" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrz-Gq-wLq">
@@ -359,7 +369,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-kd-Isb">
-                                <rect key="frame" x="48" y="411" width="226" height="35"/>
+                                <rect key="frame" x="48" y="701" width="320" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Комманда клуба"/>
                                 <connections>
@@ -396,15 +406,15 @@
             <objects>
                 <tableViewController id="RCq-Gz-IKK" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="iek-aY-1ve">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mxV-hE-Vmo">
-                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mxV-hE-Vmo" id="TZl-gZ-WN2">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -425,7 +435,7 @@
             <objects>
                 <navigationController id="rz1-AV-PXd" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Azn-YI-E8S">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -442,7 +452,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="WvP-1J-Wcs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Awk-V5-1GX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <navigationBarAppearance key="standardAppearance"/>
                     </navigationBar>
@@ -479,7 +489,7 @@
             <objects>
                 <viewController id="l9d-8B-7XU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lbH-22-E2h">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="По датам можно что делал на тренировке и др" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElF-qG-pL4">
@@ -506,6 +516,7 @@
     </scenes>
     <resources>
         <image name="Image" width="1680" height="472"/>
+        <image name="map" width="1148" height="670"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <image name="welcome_logo" width="500" height="500"/>
