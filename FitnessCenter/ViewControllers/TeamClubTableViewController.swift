@@ -14,7 +14,6 @@ class TeamClubTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
-        
     }
     
     // MARK: - Table view data source
@@ -30,7 +29,8 @@ class TeamClubTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.text = team.fullName
         content.secondaryText = team.profession
-        content.image = UIImage(systemName: "person.fill")
+        content.image = UIImage(named: team.fullName)
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         
         return cell
@@ -40,3 +40,4 @@ class TeamClubTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+

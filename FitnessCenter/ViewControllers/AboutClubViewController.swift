@@ -21,6 +21,4 @@ class AboutClubViewController: UIViewController {
         aboutClub.text = information
         imageClub.image = myImage
     }
-
-
 }

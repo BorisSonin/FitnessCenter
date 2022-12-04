@@ -470,51 +470,56 @@
             <objects>
                 <viewController id="ym8-sQ-LrY" customClass="AboutClubViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xg-nS-Fyd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-kd-Isb">
-                                <rect key="frame" x="48" y="510" width="281" height="35"/>
+                                <rect key="frame" x="44.666666666666657" y="763.66666666666663" width="304.33333333333337" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Комманда разработчиков"/>
                                 <connections>
                                     <segue destination="rz1-AV-PXd" kind="presentation" id="Oh2-bp-YwB"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WY1-lP-l2c">
-                                <rect key="frame" x="16" y="103" width="361" height="630"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l9d-DH-Sgp">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="193"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="193" id="iE2-tx-A2t"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О нас" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-z8-6UI">
-                                        <rect key="frame" x="0.0" y="213" width="361" height="36"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some text about fitnes club" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aom-30-TwT">
-                                        <rect key="frame" x="0.0" y="269" width="361" height="361"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l9d-DH-Sgp">
+                                <rect key="frame" x="16" y="103" width="361" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="iE2-tx-A2t"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О нас" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-z8-6UI">
+                                <rect key="frame" x="16" y="316" width="361" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="3Eh-7B-Max"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some text about fitnes club" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aom-30-TwT">
+                                <rect key="frame" x="16" y="372" width="361" height="356.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lfx-gf-HOK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2CH-kd-Isb" firstAttribute="centerX" secondItem="8Xg-nS-Fyd" secondAttribute="centerX" id="1Qb-kg-DUb"/>
-                            <constraint firstItem="lfx-gf-HOK" firstAttribute="bottom" secondItem="2CH-kd-Isb" secondAttribute="bottom" constant="20" id="FXW-ne-lB6"/>
-                            <constraint firstItem="WY1-lP-l2c" firstAttribute="leading" secondItem="lfx-gf-HOK" secondAttribute="leading" constant="16" id="U64-IS-fVU"/>
-                            <constraint firstItem="lfx-gf-HOK" firstAttribute="trailing" secondItem="WY1-lP-l2c" secondAttribute="trailing" constant="16" id="ffb-MY-nA3"/>
-                            <constraint firstItem="2CH-kd-Isb" firstAttribute="top" secondItem="WY1-lP-l2c" secondAttribute="bottom" constant="30" id="kdc-2v-OJQ"/>
-                            <constraint firstItem="WY1-lP-l2c" firstAttribute="top" secondItem="lfx-gf-HOK" secondAttribute="top" id="wKf-ee-swk"/>
+                            <constraint firstItem="2CH-kd-Isb" firstAttribute="top" secondItem="aom-30-TwT" secondAttribute="bottom" constant="34.670000000000002" id="0hh-8W-8dM"/>
+                            <constraint firstItem="lfx-gf-HOK" firstAttribute="trailing" secondItem="l9d-DH-Sgp" secondAttribute="trailing" constant="16" id="4bx-zx-Uer"/>
+                            <constraint firstItem="lfx-gf-HOK" firstAttribute="trailing" secondItem="aom-30-TwT" secondAttribute="trailing" constant="16" id="4k0-NZ-1iA"/>
+                            <constraint firstItem="l9d-DH-Sgp" firstAttribute="top" secondItem="lfx-gf-HOK" secondAttribute="top" id="6nx-Hz-ovO"/>
+                            <constraint firstItem="l9d-DH-Sgp" firstAttribute="leading" secondItem="lfx-gf-HOK" secondAttribute="leading" constant="16" id="78F-a9-Hc4"/>
+                            <constraint firstItem="2CH-kd-Isb" firstAttribute="leading" secondItem="lfx-gf-HOK" secondAttribute="leading" constant="44.5" id="Cp9-fW-SUe"/>
+                            <constraint firstItem="aom-30-TwT" firstAttribute="leading" secondItem="lfx-gf-HOK" secondAttribute="leading" constant="16" id="he5-Jm-71z"/>
+                            <constraint firstItem="lfx-gf-HOK" firstAttribute="trailing" secondItem="iBy-z8-6UI" secondAttribute="trailing" constant="16" id="jG6-2H-FSw"/>
+                            <constraint firstItem="iBy-z8-6UI" firstAttribute="leading" secondItem="lfx-gf-HOK" secondAttribute="leading" constant="16" id="jZ1-uY-va2"/>
+                            <constraint firstItem="iBy-z8-6UI" firstAttribute="top" secondItem="l9d-DH-Sgp" secondAttribute="bottom" constant="20" id="og1-j8-7Vk"/>
+                            <constraint firstItem="aom-30-TwT" firstAttribute="top" secondItem="iBy-z8-6UI" secondAttribute="bottom" constant="20" id="rW5-1H-fXj"/>
+                            <constraint firstItem="lfx-gf-HOK" firstAttribute="trailing" secondItem="2CH-kd-Isb" secondAttribute="trailing" constant="44" id="thG-Om-xo5"/>
+                            <constraint firstItem="lfx-gf-HOK" firstAttribute="bottom" secondItem="2CH-kd-Isb" secondAttribute="bottom" constant="20" id="zAE-LT-ist"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="boq-gf-WL2"/>
@@ -525,7 +530,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UX4-bo-IbA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="-261"/>
+            <point key="canvasLocation" x="1232.824427480916" y="93.661971830985919"/>
         </scene>
         <!--Команда разработчиков-->
         <scene sceneID="13t-FP-fXq">
@@ -536,8 +541,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mxV-hE-Vmo">
-                                <rect key="frame" x="0.0" y="50" width="375" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamList" id="mxV-hE-Vmo">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mxV-hE-Vmo" id="TZl-gZ-WN2">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -554,7 +559,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gc8-7d-8Rs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2358" y="-261"/>
+            <point key="canvasLocation" x="2139.6946564885498" y="836.61971830985919"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IP5-gT-EW0">
