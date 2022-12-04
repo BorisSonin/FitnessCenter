@@ -28,11 +28,5 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
-        
-    }
-
-
 }
 
