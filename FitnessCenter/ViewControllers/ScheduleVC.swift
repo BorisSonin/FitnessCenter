@@ -51,7 +51,7 @@ class ScheduleVC: UIViewController {
 
 extension ScheduleVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       kindOfProgramm.count
+        scheduleList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
