@@ -13,7 +13,7 @@ class ScheduleVC: UIViewController {
     let kindOfProgramm = DataStore.shared.kindOfProgramm
     let imageNames = DataStore.shared.imageNames
     var images = [UIImage]()
-    var scheduleList = Schedule.getScheduleList()
+    var scheduleList = Schedule.getScheduleList(date: Date())
     
     @IBOutlet weak var changingView: UIImageView!
     
@@ -34,16 +34,8 @@ class ScheduleVC: UIViewController {
         datePicker.addTarget(self, action: #selector(dateSelected), for: .valueChanged)
     }
     @IBAction func datePickerChangedVaue(_ sender: UIDatePicker) {
-        
-        let dateFormatter = DateFormatter()
-        var weekday: String = ""
-        dateFormatter.dateFormat = "ccc"
-        weekday = dateFormatter.string(from: self.datePicker.date)
-        
+        scheduleList = Schedule.getScheduleList(date: sender.date)
         scheduleTableView.reloadData()
-            
-        
-        print(weekday)
     }
     
     @objc
