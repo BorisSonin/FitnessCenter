@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WvP-1J-Wcs">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="GLf-D2-Xe9" customClass="MainViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3sc-8c-cNJ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L7q-VC-Vnw">
@@ -71,8 +71,19 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-3Q-abD">
+                                        <rect key="frame" x="0.0" y="128.5" width="142" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="О клубе"/>
+                                        <connections>
+                                            <segue destination="ym8-sQ-LrY" kind="presentation" id="bJ7-L1-fLd"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_logo" translatesAutoresizingMaskIntoConstraints="NO" id="JKs-nm-Y5k">
+                                <rect key="frame" x="16" y="150" width="382" height="500"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Asb-Gh-mdJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,7 +117,7 @@
             <objects>
                 <viewController id="jFf-0X-Vlk" customClass="AboutUserViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y2F-QY-OHn">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rld-Gm-C8S">
@@ -260,50 +271,133 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05X-A4-gli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="qCq-7N-THi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2354.9618320610684" y="-1902.1126760563382"/>
+            <point key="canvasLocation" x="3160" y="-2073"/>
         </scene>
-        <!--View Controller-->
+        <!--ContactVC-->
         <scene sceneID="I4C-Jd-JFe">
             <objects>
-                <viewController id="mcG-A3-Ze2" sceneMemberID="viewController">
+                <viewController id="mcG-A3-Ze2" customClass="ContactVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="URU-8p-sHK">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Контакты" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNN-Rn-Fcv">
-                                <rect key="frame" x="91" y="325" width="176" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="nUm-84-mxJ">
+                                <rect key="frame" x="16" y="92" width="382" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nUm-84-mxJ" secondAttribute="height" multiplier="361:119" id="2GH-Aa-dcW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контакты" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNN-Rn-Fcv">
+                                <rect key="frame" x="108" y="226" width="198" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Список в столбец город, Адрес - тел, с картинками можно слева-справа по фантазии" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmN-md-OBT">
-                                <rect key="frame" x="91" y="456" width="234" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nUm-84-mxJ">
-                                <rect key="frame" x="16" y="103" width="361" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WDE-Hr-XHi">
+                                <rect key="frame" x="16" y="266" width="382" height="145"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Москва" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ni-JN-UU3">
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fv-k5-BDw">
+                                        <rect key="frame" x="0.0" y="25.5" width="39" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw5-hB-hlp">
+                                        <rect key="frame" x="0.0" y="50" width="77.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEQ-qr-GaK">
+                                        <rect key="frame" x="0.0" y="75.5" width="39" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время работы:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xY-Pg-XcE">
+                                        <rect key="frame" x="0.0" y="100" width="124.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVH-Us-034">
+                                        <rect key="frame" x="0.0" y="125.5" width="39" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y6N-FF-KbW">
+                                <rect key="frame" x="66" y="791" width="282" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказать обратный звонок!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-f3-Ynp">
+                                        <rect key="frame" x="32" y="0.0" width="218.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tj-Al-LyP">
+                                        <rect key="frame" x="117.5" y="20.5" width="47" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="☎️"/>
+                                        <connections>
+                                            <action selector="backCallButton" destination="mcG-A3-Ze2" eventType="touchUpInside" id="d6S-1q-9v8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="vms-Qv-4Wy">
+                                <rect key="frame" x="52" y="445" width="310" height="286"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="8Da-37-k6f"/>
+                                    <constraint firstAttribute="width" secondItem="vms-Qv-4Wy" secondAttribute="height" multiplier="155:143" id="eVs-Mi-dyK"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VfU-ia-2hb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nUm-84-mxJ" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="16" id="3ox-Pi-5eL"/>
+                            <constraint firstItem="nUm-84-mxJ" firstAttribute="top" secondItem="VfU-ia-2hb" secondAttribute="top" id="6o6-Ki-isf"/>
+                            <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="nUm-84-mxJ" secondAttribute="trailing" constant="16" id="BG7-Lh-aea"/>
+                            <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="xNN-Rn-Fcv" secondAttribute="trailing" constant="108" id="CiF-5R-ELr"/>
+                            <constraint firstItem="y6N-FF-KbW" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="66" id="DpT-dh-bL6"/>
+                            <constraint firstItem="WDE-Hr-XHi" firstAttribute="top" secondItem="xNN-Rn-Fcv" secondAttribute="bottom" constant="16" id="OCq-HZ-gbO"/>
+                            <constraint firstItem="vms-Qv-4Wy" firstAttribute="centerY" secondItem="URU-8p-sHK" secondAttribute="centerY" constant="140" id="Uiq-km-GMV"/>
+                            <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="vms-Qv-4Wy" secondAttribute="trailing" constant="52" id="VWT-UD-WAU"/>
+                            <constraint firstItem="vms-Qv-4Wy" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="52" id="bqH-U8-8Uc"/>
+                            <constraint firstItem="WDE-Hr-XHi" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="16" id="iHI-41-D6E"/>
+                            <constraint firstItem="VfU-ia-2hb" firstAttribute="bottom" secondItem="y6N-FF-KbW" secondAttribute="bottom" constant="16" id="nMz-jd-5Kg"/>
+                            <constraint firstItem="xNN-Rn-Fcv" firstAttribute="top" secondItem="nUm-84-mxJ" secondAttribute="bottom" constant="8" symbolic="YES" id="nn6-wY-Czt"/>
+                            <constraint firstItem="xNN-Rn-Fcv" firstAttribute="leading" secondItem="VfU-ia-2hb" secondAttribute="leading" constant="108" id="rbx-WA-oS7"/>
+                            <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="y6N-FF-KbW" secondAttribute="trailing" constant="66" id="svb-ez-ru3"/>
+                            <constraint firstItem="VfU-ia-2hb" firstAttribute="trailing" secondItem="WDE-Hr-XHi" secondAttribute="trailing" constant="16" id="tOq-gB-RCY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="T6j-02-QEd"/>
+                    <connections>
+                        <outlet property="adressLabel" destination="6Fv-k5-BDw" id="I84-8W-a5C"/>
+                        <outlet property="phoneLabel" destination="lEQ-qr-GaK" id="IHq-Jh-aiK"/>
+                        <outlet property="workHourseLabel" destination="uVH-Us-034" id="JNh-n9-y3N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUK-ZJ-xuf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="-984"/>
+            <point key="canvasLocation" x="1530.4347826086957" y="-642.85714285714278"/>
         </scene>
         <!--Личный кабинет-->
         <scene sceneID="Iiw-gQ-CKT">
             <objects>
                 <viewController id="mGD-Xh-pXy" customClass="LogInViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hnf-6p-hjO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X4J-db-axZ">
@@ -396,7 +490,7 @@
             <objects>
                 <viewController id="C8w-Va-SzQ" customClass="ProgrammVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xEF-a6-tnj">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Программы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJd-pR-95c">
@@ -432,7 +526,7 @@
             <objects>
                 <viewController id="ytu-uk-COQ" customClass="ScheduleVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="luf-uD-cDI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Расписание" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVK-jY-DIe">
@@ -468,11 +562,11 @@
             <objects>
                 <viewController id="ym8-sQ-LrY" customClass="AboutClubViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Xg-nS-Fyd">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-kd-Isb">
-                                <rect key="frame" x="44.666666666666657" y="763.66666666666663" width="304.33333333333337" height="34.333333333333371"/>
+                                <rect key="frame" x="48" y="701" width="320" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Комманда разработчиков"/>
                                 <connections>
@@ -535,15 +629,15 @@
             <objects>
                 <tableViewController id="RCq-Gz-IKK" customClass="TeamClubTableViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="iek-aY-1ve">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamList" id="mxV-hE-Vmo">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mxV-hE-Vmo">
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mxV-hE-Vmo" id="TZl-gZ-WN2">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -565,7 +659,7 @@
                 <navigationController id="rz1-AV-PXd" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aET-sJ-2Sq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Azn-YI-E8S">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -582,7 +676,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="WvP-1J-Wcs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Awk-V5-1GX">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <navigationBarAppearance key="standardAppearance"/>
                     </navigationBar>
@@ -620,7 +714,7 @@
             <objects>
                 <viewController id="l9d-8B-7XU" customClass="TrainingPlanViewController" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lbH-22-E2h">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-VL-ihY">
@@ -670,8 +764,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clipboard" catalog="system" width="103" height="128"/>
-        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="Image" width="1680" height="472"/>
+        <image name="map" width="1148" height="670"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <image name="welcome_logo" width="500" height="500"/>
