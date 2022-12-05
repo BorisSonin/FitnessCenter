@@ -99,9 +99,9 @@
 		7FEC3147293384A6008ED057 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7F87352C292CC23C0022E19D /* MainViewController.swift */,
 				7FEC31512933A853008ED057 /* TabBarViewController.swift */,
 				7FD642912937912A00AB5345 /* ContactVC.swift */,
-				7F87352C292CC23C0022E19D /* MainViewController.swift */,
 				7FEC314D2933A414008ED057 /* ProgrammVC.swift */,
 				7FEC314F2933A454008ED057 /* ScheduleVC.swift */,
 				C7E25E412937B436007095AE /* TeamClubTableViewController.swift */,

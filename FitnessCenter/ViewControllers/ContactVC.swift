@@ -17,15 +17,16 @@ class ContactVC: UIViewController {
     @IBOutlet var workHourseLabel: UILabel!
 
     
-    var center = Contacts.getContacts()
+    var center: Contacts!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        adressLabel.text = center.adress
+        adressLabel.text = center.address
         phoneLabel.text = center.phone
         workHourseLabel.text = center.workingHours
     }
     
+
 // MARK: - IBAction
     @IBAction func backCallButton() {
         showAlert(withTitle: "Дорогой клиент!", andMessage: "Наш оператор свяжется с Вами в ближайшее время!")
