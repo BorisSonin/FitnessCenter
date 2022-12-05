@@ -64,26 +64,58 @@ extension Schedule {
     static func getScheduleList() -> [Schedule] {
         let kindOfProgramm = DataStore.shared.kindOfProgramm
         let workingTime = DataStore.shared.workingTime
-        let weekdays = [
-        "Пн",
-        "Вт",
-        "Ср",
-        "Чт",
-        "Пт",
-        "Сб",
-        "Вс"
-        ]
+        let weekdays = "Пн"
+//        [
+//        "Пн",
+//        "Вт",
+//        "Ср",
+//        "Чт",
+//        "Пт",
+//        "Сб",
+//        "Вс"
+//        ]
         switch weekdays {
-            
-        default:
-            <#code#>
-        }
-        return [
+        case "Пн": [
             Schedule(time: workingTime[0], name: kindOfProgramm[4]),
             Schedule(time: workingTime[0], name: kindOfProgramm[3]),
             Schedule(time: workingTime[1], name: kindOfProgramm[2]),
             Schedule(time: workingTime[2], name: kindOfProgramm[1]),
             Schedule(time: workingTime[3], name: kindOfProgramm[0])
         ]
+        case "Вт": [
+            Schedule(time: workingTime[0], name: kindOfProgramm[4]),
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+        ]
+        case "Ср":[
+            Schedule(time: workingTime[0], name: kindOfProgramm[4]),
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+            Schedule(time: workingTime[2], name: kindOfProgramm[1]),
+            Schedule(time: workingTime[3], name: kindOfProgramm[0])
+            ]
+        case "Чт": [
+            Schedule(time: workingTime[0], name: kindOfProgramm[4]),
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+            Schedule(time: workingTime[2], name: kindOfProgramm[1]),
+            Schedule(time: workingTime[3], name: kindOfProgramm[0])
+        ]
+        case "Пт": [
+            Schedule(time: workingTime[2], name: kindOfProgramm[1]),
+            Schedule(time: workingTime[3], name: kindOfProgramm[0])
+        ]
+        case "Сб": [
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+            Schedule(time: workingTime[2], name: kindOfProgramm[1])
+        ]
+        case "Вс": [
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+        ]
+        default:
+            Schedule(time: "Выходной.", name: "Санитарный день")
+        }
+        return
     }
 }
