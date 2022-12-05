@@ -16,8 +16,8 @@
 		7FEC314E2933A414008ED057 /* ProgrammVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC314D2933A414008ED057 /* ProgrammVC.swift */; };
 		7FEC31502933A454008ED057 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC314F2933A454008ED057 /* ScheduleVC.swift */; };
 		7FEC31522933A853008ED057 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC31512933A853008ED057 /* TabBarViewController.swift */; };
-		C720BD72293B812A00CF4CB7 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720BD71293B812A00CF4CB7 /* MyCollectionViewCell.swift */; };
 		C79345032937D0C100B64A14 /* AboutClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79345022937D0C100B64A14 /* AboutClubViewController.swift */; };
+		C7BA157A293E65A3005843DA /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BA1579293E65A3005843DA /* ImageCollectionViewCell.swift */; };
 		C7E25E402937B350007095AE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E25E3F2937B350007095AE /* Model.swift */; };
 		C7E25E422937B436007095AE /* TeamClubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E25E412937B436007095AE /* TeamClubTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,8 +34,8 @@
 		7FEC314D2933A414008ED057 /* ProgrammVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammVC.swift; sourceTree = "<group>"; };
 		7FEC314F2933A454008ED057 /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
 		7FEC31512933A853008ED057 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		C720BD71293B812A00CF4CB7 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		C79345022937D0C100B64A14 /* AboutClubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutClubViewController.swift; sourceTree = "<group>"; };
+		C7BA1579293E65A3005843DA /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7E25E3F2937B350007095AE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C7E25E412937B436007095AE /* TeamClubTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamClubTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +89,7 @@
 				7FEC314F2933A454008ED057 /* ScheduleVC.swift */,
 				C7E25E412937B436007095AE /* TeamClubTableViewController.swift */,
 				C79345022937D0C100B64A14 /* AboutClubViewController.swift */,
+				C7BA1579293E65A3005843DA /* ImageCollectionViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -97,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				7F87352E292CC23C0022E19D /* Main.storyboard */,
-				C720BD71293B812A00CF4CB7 /* MyCollectionViewCell.swift */,
 				7F873533292CC23D0022E19D /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
@@ -213,7 +213,7 @@
 				7F87352D292CC23C0022E19D /* MainViewController.swift in Sources */,
 				7FEC314E2933A414008ED057 /* ProgrammVC.swift in Sources */,
 				C79345032937D0C100B64A14 /* AboutClubViewController.swift in Sources */,
-				C720BD72293B812A00CF4CB7 /* MyCollectionViewCell.swift in Sources */,
+				C7BA157A293E65A3005843DA /* ImageCollectionViewCell.swift in Sources */,
 				7F873529292CC23C0022E19D /* AppDelegate.swift in Sources */,
 				7FEC31522933A853008ED057 /* TabBarViewController.swift in Sources */,
 				7F87352B292CC23C0022E19D /* SceneDelegate.swift in Sources */,
