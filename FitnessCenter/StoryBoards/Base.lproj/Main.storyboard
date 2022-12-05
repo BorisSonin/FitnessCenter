@@ -35,7 +35,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Расписание"/>
                                                 <connections>
-                                                    <segue destination="ytu-uk-COQ" kind="presentation" modalPresentationStyle="automatic" id="0DO-Xe-byq"/>
+                                                    <segue destination="ytu-uk-COQ" kind="push" id="0DO-Xe-byq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oL-I6-0Ly">
@@ -269,36 +269,78 @@
             <objects>
                 <viewController id="ytu-uk-COQ" customClass="ScheduleVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="luf-uD-cDI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Расписание" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVK-jY-DIe">
-                                <rect key="frame" x="114" y="211" width="176" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расписание" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVK-jY-DIe">
+                                <rect key="frame" x="16" y="119" width="361" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NR7-5W-IEN">
-                                <rect key="frame" x="16" y="59" width="361" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NR7-5W-IEN">
+                                <rect key="frame" x="16" y="165" width="361" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="chg-ka-iZp"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtZ-Kc-CmG">
-                                <rect key="frame" x="100" y="321" width="234" height="295"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Можно добавить календарь, пока не понятно как фиксить даты, можем добавить и решить по факту что  ним сделать, при выборе даты показывать инфо или в ином виде, можно при нажатии показывать название программ из экрана программ</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-hr-0kG">
+                                <rect key="frame" x="16" y="331" width="361" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="kV3-GK-f9j"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="datePickerChangedVaue:" destination="ytu-uk-COQ" eventType="valueChanged" id="j0K-kO-jQ4"/>
+                                </connections>
+                            </datePicker>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4du-FI-mIW">
+                                <rect key="frame" x="16" y="641" width="361" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0ut-PG-O8K"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="schedule" id="XGe-Qn-OYb">
+                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XGe-Qn-OYb" id="WYC-Ua-S7S">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ytu-uk-COQ" id="NjK-NS-6Fd"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U95-ZS-evP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NR7-5W-IEN" firstAttribute="leading" secondItem="U95-ZS-evP" secondAttribute="leading" constant="16" id="2AX-F2-OVQ"/>
+                            <constraint firstItem="4du-FI-mIW" firstAttribute="leading" secondItem="U95-ZS-evP" secondAttribute="leading" constant="16" id="5ak-zI-heB"/>
+                            <constraint firstItem="vPT-hr-0kG" firstAttribute="leading" secondItem="U95-ZS-evP" secondAttribute="leading" constant="16" id="H78-3g-uCG"/>
+                            <constraint firstItem="U95-ZS-evP" firstAttribute="trailing" secondItem="4du-FI-mIW" secondAttribute="trailing" constant="16" id="KuY-yK-peQ"/>
+                            <constraint firstItem="NR7-5W-IEN" firstAttribute="top" secondItem="mVK-jY-DIe" secondAttribute="bottom" constant="16" id="LRU-Ax-xdH"/>
+                            <constraint firstItem="U95-ZS-evP" firstAttribute="trailing" secondItem="NR7-5W-IEN" secondAttribute="trailing" constant="16" id="R9L-HJ-N00"/>
+                            <constraint firstItem="U95-ZS-evP" firstAttribute="trailing" secondItem="vPT-hr-0kG" secondAttribute="trailing" constant="16" id="RWl-M2-HlJ"/>
+                            <constraint firstItem="mVK-jY-DIe" firstAttribute="leading" secondItem="U95-ZS-evP" secondAttribute="leading" constant="16" id="Wqb-u9-oan"/>
+                            <constraint firstItem="U95-ZS-evP" firstAttribute="trailing" secondItem="mVK-jY-DIe" secondAttribute="trailing" constant="16" id="iCp-QK-8x0"/>
+                            <constraint firstItem="mVK-jY-DIe" firstAttribute="top" secondItem="U95-ZS-evP" secondAttribute="top" constant="16" id="iRg-oq-UXd"/>
+                            <constraint firstItem="vPT-hr-0kG" firstAttribute="top" secondItem="NR7-5W-IEN" secondAttribute="bottom" constant="16" id="ouM-wV-doE"/>
+                            <constraint firstItem="4du-FI-mIW" firstAttribute="top" secondItem="vPT-hr-0kG" secondAttribute="bottom" constant="10" id="yDG-MD-NOa"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="VlR-na-hUN"/>
+                    <connections>
+                        <outlet property="changingView" destination="NR7-5W-IEN" id="BYc-e7-nOU"/>
+                        <outlet property="datePicker" destination="vPT-hr-0kG" id="jnA-FL-vTD"/>
+                        <outlet property="scheduleTableView" destination="4du-FI-mIW" id="9y0-GA-RHV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCc-th-o2j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286" y="-261"/>
+            <point key="canvasLocation" x="284.73282442748092" y="-261.26760563380282"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="94b-Ct-8g8">

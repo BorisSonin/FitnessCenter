@@ -13,7 +13,16 @@ struct ProgrammName {
     let fightingArtsProgram: String
     let gymProgram: String
     let swimmingProgram: String
+    let workingTime: String
     
+}
+struct Schedule {
+    let time: String
+    let name: String
+    
+    var title: String {
+        "\(time) - \(name)"
+    }
 }
 
 // MARK: - Расширения для структур/создание экземпляров
@@ -27,13 +36,15 @@ extension ProgrammName {
         let fightingArtsProgram = DataStore.shared.fightingArtsProgramm
         let gymProgram = DataStore.shared.gymProgramm
         let swimmingProgram = DataStore.shared.swimmingProgramm
+        let workingTime = DataStore.shared.workingTime
         
         let iterationCount = min(
             gymProgram.count,
             danceProgram.count,
             fightingArtsProgram.count,
             swimmingProgram.count,
-            kindOfProgramm.count
+            kindOfProgramm.count,
+            workingTime.count
         )
         
         for index in 0..<iterationCount {
@@ -42,10 +53,37 @@ extension ProgrammName {
                                              slimmingProgram: swimmingProgram[index],
                                              fightingArtsProgram: fightingArtsProgram[index],
                                              gymProgram: gymProgram[index],
-                                             swimmingProgram: slimmingProgram[index]
+                                             swimmingProgram: slimmingProgram[index],
+                                             workingTime: workingTime[index]
                                             ))
         }
         return programmName
-        
+    }
+}
+extension Schedule {
+    static func getScheduleList() -> [Schedule] {
+        let kindOfProgramm = DataStore.shared.kindOfProgramm
+        let workingTime = DataStore.shared.workingTime
+        let weekdays = [
+        "Пн",
+        "Вт",
+        "Ср",
+        "Чт",
+        "Пт",
+        "Сб",
+        "Вс"
+        ]
+        switch weekdays {
+            
+        default:
+            <#code#>
+        }
+        return [
+            Schedule(time: workingTime[0], name: kindOfProgramm[4]),
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+            Schedule(time: workingTime[2], name: kindOfProgramm[1]),
+            Schedule(time: workingTime[3], name: kindOfProgramm[0])
+        ]
     }
 }
