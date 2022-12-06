@@ -9,13 +9,54 @@ import UIKit
 
 class TrainingPlanViewController: UIViewController {
 
-    @IBOutlet var programmNameLabel: UILabel!
-    @IBOutlet var descriptionLabel: UILabel!
-    var trainingPlan: [ProgrammName]!
+    @IBOutlet var logoImage: UIImageView!
+    @IBOutlet var segmentControl: UISegmentedControl!
+    @IBOutlet var trainingTableView: UITableView!
+    
+    var trainingPlanMonday: [String]!
+    var trainingPlanWednesday: [String]!
+    var trainingPlanFriday: [String]!
+    var training: [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        programmNameLabel.text = trainingPlan[0].nameProgramm
-        descriptionLabel.text = trainingPlan[0].desctiption
+        logoImage.image = UIImage(named: "welcome_logo")
+        training = trainingPlanMonday
+
     }
+    
+    @IBAction func segmentControlAction(_ sender: UISegmentedControl) {
+
+        switch segmentControl.selectedSegmentIndex {
+        case 0:
+            training = trainingPlanMonday
+        case 1:
+            training = trainingPlanWednesday
+        default:
+            training = trainingPlanFriday
+        }
+        trainingTableView.reloadData()
+    }
+}
+
+extension TrainingPlanViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        trainingPlanMonday.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TrainingPlanCell", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        let trainingPlan = training[indexPath.row]
+        
+        content.text = trainingPlan
+        cell.contentConfiguration = content
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 }

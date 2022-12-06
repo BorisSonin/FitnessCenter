@@ -9,7 +9,7 @@ import UIKit
 
 class TeamClubTableViewController: UITableViewController {
     
-    private var teamCLubList = Team.getTeamList()
+    var teamCLubList = Team.getTeamList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +17,6 @@ class TeamClubTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-    
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         teamCLubList.count
     }
