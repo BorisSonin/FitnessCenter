@@ -12,7 +12,7 @@ class TrainingPlanViewController: UIViewController {
     @IBOutlet var logoImage: UIImageView!
     @IBOutlet var programmNameLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
-    var trainingPlan: [ProgrammName]!
+//    var trainingPlan: [ProgrammName]!
     
     override func viewDidLoad() {
         super.viewDidLoad()

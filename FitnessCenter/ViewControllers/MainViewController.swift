@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     private let user = User.getUserData()
-    private let programmName = ProgrammName.getProgrammName()
+//    private let programmName = ProgrammName.getProgrammName()
     private let center = Contacts.getContacts()
     
     private let kindOfProgram = DataStore.shared.kindOfProgramm
@@ -45,17 +45,9 @@ class MainViewController: UIViewController {
             if let logInVC = $0 as? LogInViewController {
                 logInVC.user = user
             } else if let trainingPlanVC = $0 as? TrainingPlanViewController {
-                trainingPlanVC.trainingPlan = programmName
+//                trainingPlanVC.trainingPlan = programmName
             }
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print (programmName)
-        
-        programmName.
-    }
-
 }
 

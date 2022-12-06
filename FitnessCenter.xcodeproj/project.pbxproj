@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F167A78293DC37D00FC223E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F167A77293DC37D00FC223E /* Main.storyboard */; };
-		5F32D6A029372BDC00E00391 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32D69F29372BDC00E00391 /* DataModel.swift */; };
+		5F32D6A029372BDC00E00391 /* ProgrammAndSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F32D69F29372BDC00E00391 /* ProgrammAndSchedule.swift */; };
 		5F3A0A8A293690AC00B28B75 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3A0A89293690AC00B28B75 /* DataStore.swift */; };
 		5FA39C612939163400AB9ABD /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA39C602939163400AB9ABD /* LogInViewController.swift */; };
 		5FA39C632939204900AB9ABD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA39C622939204900AB9ABD /* User.swift */; };
@@ -32,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		5F167A77293DC37D00FC223E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5F32D69F29372BDC00E00391 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		5F32D69F29372BDC00E00391 /* ProgrammAndSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammAndSchedule.swift; sourceTree = "<group>"; };
 		5F3A0A89293690AC00B28B75 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		5FA39C602939163400AB9ABD /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		5FA39C622939204900AB9ABD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			children = (
 				7FD642932937DC7E00AB5345 /* ContactsModels.swift */,
 				C7E25E3F2937B350007095AE /* Model.swift */,
-				5F32D69F29372BDC00E00391 /* DataModel.swift */,
+				5F32D69F29372BDC00E00391 /* ProgrammAndSchedule.swift */,
 				5FA39C622939204900AB9ABD /* User.swift */,
 			);
 			name = Models;
@@ -234,7 +234,7 @@
 			files = (
 				C7E25E422937B436007095AE /* TeamClubTableViewController.swift in Sources */,
 				C7E25E402937B350007095AE /* Model.swift in Sources */,
-				5F32D6A029372BDC00E00391 /* DataModel.swift in Sources */,
+				5F32D6A029372BDC00E00391 /* ProgrammAndSchedule.swift in Sources */,
 				5F3A0A8A293690AC00B28B75 /* DataStore.swift in Sources */,
 				5FA39C612939163400AB9ABD /* LogInViewController.swift in Sources */,
 				7FEC31502933A454008ED057 /* ScheduleVC.swift in Sources */,
