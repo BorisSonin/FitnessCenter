@@ -17,7 +17,7 @@ class TrainingPlanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         logoImage.image = UIImage(named: "welcome_logo")
-        programmNameLabel.text = trainingPlan[0].nameProgramm
-        descriptionLabel.text = trainingPlan[0].desctiption
+//        programmNameLabel.text = trainingPlan[0].nameProgramm
+//        descriptionLabel.text = trainingPlan[0].desctiption
     }
 }

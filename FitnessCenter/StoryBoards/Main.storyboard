@@ -36,7 +36,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Программы"/>
                                                         <connections>
-                                                            <segue destination="nO8-TX-lmO" kind="presentation" modalPresentationStyle="automatic" id="ucx-WB-Wuf"/>
+                                                            <segue destination="DAm-Ih-2IM" kind="show" id="r5a-oM-1T6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEZ-FU-pZU">
@@ -44,7 +44,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Расписание"/>
                                                         <connections>
-                                                            <segue destination="cdm-N4-Oeb" kind="presentation" modalPresentationStyle="automatic" id="wrA-nU-XpK"/>
+                                                            <segue destination="BrR-dI-X0L" kind="show" id="0nD-yJ-Sux"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEX-yO-R7F">
@@ -354,78 +354,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qag-EO-OAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1466" y="-1902"/>
-        </scene>
-        <!--ProgrammVC-->
-        <scene sceneID="LhT-tU-uea">
-            <objects>
-                <viewController id="nO8-TX-lmO" customClass="ProgrammVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aK1-nZ-Xoy">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Программы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSZ-fO-Pdh">
-                                <rect key="frame" x="108" y="213" width="176" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fGc-qG-co7">
-                                <rect key="frame" x="16" y="59" width="361" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7x-Zn-VMD">
-                                <rect key="frame" x="27" y="263" width="350" height="412"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">описание программ (индивид трен, групповые, йога и т.д, можно разместить кнопки и от них переходить на программы, добавить свитчи и по мере выбора показывать нагрузку или стоимость/любую инфо</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="yCc-nx-VHs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b7e-qk-btd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-382" y="-261"/>
-        </scene>
-        <!--ScheduleVC-->
-        <scene sceneID="S9L-Bn-BUi">
-            <objects>
-                <viewController id="cdm-N4-Oeb" customClass="ScheduleVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Cn-31-EWf">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Расписание" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfi-HB-u7m">
-                                <rect key="frame" x="114" y="211" width="176" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxK-5q-QR4">
-                                <rect key="frame" x="16" y="59" width="361" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg0-EE-ZC4">
-                                <rect key="frame" x="100" y="321" width="234" height="295"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Можно добавить календарь, пока не понятно как фиксить даты, можем добавить и решить по факту что  ним сделать, при выборе даты показывать инфо или в ином виде, можно при нажатии показывать название программ из экрана программ</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2gx-ca-yyk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mr4-Gd-oDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="286" y="-261"/>
         </scene>
         <!--About Club View Controller-->
         <scene sceneID="bYY-SO-Wf4">
@@ -751,6 +679,150 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qu2-ab-8c9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="759.5419847328244" y="-958.45070422535218"/>
+        </scene>
+        <!--ProgrammVC-->
+        <scene sceneID="v3G-Qo-6AO">
+            <objects>
+                <viewController id="DAm-Ih-2IM" customClass="ProgrammVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WNS-FS-bgh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Виды спорта" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc7-oW-CKS">
+                                <rect key="frame" x="16" y="119" width="361" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="hvt-Xe-1Q2">
+                                <rect key="frame" x="16" y="165" width="361" height="160"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Xr8-BU-GfL"/>
+                                </constraints>
+                                <string key="text">Давно мечтали заняться танцами? Решили попробовать себя в единоборствах? Любите кардиотренировки, но бегать по дорожке скучно? Мы поможем исполнить все ваши фитнес-желания: групповые программы в нашем фитнес-клубе  – это польза и удовольствие в одном флаконе!  Ниже представлены  доступные виды спорта.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEA-fQ-kqu">
+                                <rect key="frame" x="16" y="577" width="361" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DAm-Ih-2IM" id="Jcz-V0-UHM"/>
+                                    <outlet property="delegate" destination="DAm-Ih-2IM" id="8Eb-le-4bj"/>
+                                </connections>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="029-hA-Rvs">
+                                <rect key="frame" x="16" y="341" width="361" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Vvn-rn-gGd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x03-rU-Pdf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZEA-fQ-kqu" firstAttribute="leading" secondItem="x03-rU-Pdf" secondAttribute="leading" constant="16" id="DEp-zX-Xrs"/>
+                            <constraint firstItem="cc7-oW-CKS" firstAttribute="leading" secondItem="x03-rU-Pdf" secondAttribute="leading" constant="16" id="PMH-Sn-zhs"/>
+                            <constraint firstItem="x03-rU-Pdf" firstAttribute="trailing" secondItem="cc7-oW-CKS" secondAttribute="trailing" constant="16" id="SjL-sH-Ryo"/>
+                            <constraint firstItem="hvt-Xe-1Q2" firstAttribute="leading" secondItem="x03-rU-Pdf" secondAttribute="leading" constant="16" id="Uo4-Fg-4EK"/>
+                            <constraint firstItem="x03-rU-Pdf" firstAttribute="trailing" secondItem="ZEA-fQ-kqu" secondAttribute="trailing" constant="16" id="YDA-XA-JVe"/>
+                            <constraint firstItem="ZEA-fQ-kqu" firstAttribute="top" secondItem="029-hA-Rvs" secondAttribute="bottom" constant="16" id="eUQ-qa-aZ4"/>
+                            <constraint firstItem="029-hA-Rvs" firstAttribute="top" secondItem="hvt-Xe-1Q2" secondAttribute="bottom" constant="16" id="pfz-xb-S3w"/>
+                            <constraint firstItem="029-hA-Rvs" firstAttribute="leading" secondItem="x03-rU-Pdf" secondAttribute="leading" constant="16" id="pus-Du-e2Z"/>
+                            <constraint firstItem="cc7-oW-CKS" firstAttribute="top" secondItem="x03-rU-Pdf" secondAttribute="top" constant="16" id="qLj-di-Hre"/>
+                            <constraint firstItem="hvt-Xe-1Q2" firstAttribute="top" secondItem="cc7-oW-CKS" secondAttribute="bottom" constant="16" id="veD-Jh-o25"/>
+                            <constraint firstItem="x03-rU-Pdf" firstAttribute="trailing" secondItem="hvt-Xe-1Q2" secondAttribute="trailing" constant="16" id="vg2-Ka-PPV"/>
+                            <constraint firstItem="x03-rU-Pdf" firstAttribute="trailing" secondItem="029-hA-Rvs" secondAttribute="trailing" constant="16" id="xXX-0u-CIB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kFZ-Jl-rf6"/>
+                    <connections>
+                        <outlet property="levelPicker" destination="ZEA-fQ-kqu" id="MZW-z6-Hlz"/>
+                        <outlet property="programImageView" destination="029-hA-Rvs" id="jT8-u9-IqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0eW-Kl-QfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-764" y="-261"/>
+        </scene>
+        <!--ScheduleVC-->
+        <scene sceneID="ydT-Eh-9hE">
+            <objects>
+                <viewController id="BrR-dI-X0L" customClass="ScheduleVC" customModule="FitnessCenter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hDS-5h-61p">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расписание" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jri-N6-KmA">
+                                <rect key="frame" x="16" y="119" width="361" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cev-t8-GGl">
+                                <rect key="frame" x="16" y="165" width="361" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Az5-3y-Gcu"/>
+                                </constraints>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="Zo2-n7-0oS">
+                                <rect key="frame" x="16" y="331" width="361" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="YuU-oR-Je4"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="datePickerChangedVaue:" destination="BrR-dI-X0L" eventType="valueChanged" id="5cI-95-OaO"/>
+                                </connections>
+                            </datePicker>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GIE-wh-xSc">
+                                <rect key="frame" x="16" y="641" width="361" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9bq-kc-ULJ"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="schedule" id="KNX-MO-61l">
+                                        <rect key="frame" x="0.0" y="50" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KNX-MO-61l" id="1jp-a5-tJg">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BrR-dI-X0L" id="mdO-RO-6Lq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TFq-yG-ec6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GIE-wh-xSc" firstAttribute="top" secondItem="Zo2-n7-0oS" secondAttribute="bottom" constant="10" id="2WP-R3-S7T"/>
+                            <constraint firstItem="TFq-yG-ec6" firstAttribute="trailing" secondItem="Zo2-n7-0oS" secondAttribute="trailing" constant="16" id="3IB-5C-Erp"/>
+                            <constraint firstItem="cev-t8-GGl" firstAttribute="top" secondItem="Jri-N6-KmA" secondAttribute="bottom" constant="16" id="3if-7w-AuB"/>
+                            <constraint firstItem="TFq-yG-ec6" firstAttribute="trailing" secondItem="Jri-N6-KmA" secondAttribute="trailing" constant="16" id="4SQ-5A-XnK"/>
+                            <constraint firstItem="Zo2-n7-0oS" firstAttribute="top" secondItem="cev-t8-GGl" secondAttribute="bottom" constant="16" id="GQA-94-gIK"/>
+                            <constraint firstItem="TFq-yG-ec6" firstAttribute="trailing" secondItem="cev-t8-GGl" secondAttribute="trailing" constant="16" id="HKo-12-pPZ"/>
+                            <constraint firstItem="GIE-wh-xSc" firstAttribute="leading" secondItem="TFq-yG-ec6" secondAttribute="leading" constant="16" id="I4k-Ms-V4v"/>
+                            <constraint firstItem="Jri-N6-KmA" firstAttribute="top" secondItem="TFq-yG-ec6" secondAttribute="top" constant="16" id="OLJ-DU-dYY"/>
+                            <constraint firstItem="cev-t8-GGl" firstAttribute="leading" secondItem="TFq-yG-ec6" secondAttribute="leading" constant="16" id="P0s-e9-nqa"/>
+                            <constraint firstItem="Zo2-n7-0oS" firstAttribute="leading" secondItem="TFq-yG-ec6" secondAttribute="leading" constant="16" id="rGR-s7-Sis"/>
+                            <constraint firstItem="Jri-N6-KmA" firstAttribute="leading" secondItem="TFq-yG-ec6" secondAttribute="leading" constant="16" id="s3i-fY-Ivr"/>
+                            <constraint firstItem="TFq-yG-ec6" firstAttribute="trailing" secondItem="GIE-wh-xSc" secondAttribute="trailing" constant="16" id="t1b-Hc-FSm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RAF-KL-6Bt"/>
+                    <connections>
+                        <outlet property="changingView" destination="cev-t8-GGl" id="qs7-oz-urN"/>
+                        <outlet property="datePicker" destination="Zo2-n7-0oS" id="v0B-ky-K1y"/>
+                        <outlet property="scheduleTableView" destination="GIE-wh-xSc" id="8ES-ou-P0C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kA8-hC-doK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71" y="-261"/>
         </scene>
     </scenes>
     <resources>
