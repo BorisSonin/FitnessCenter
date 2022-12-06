@@ -5,8 +5,6 @@
 //  Created by Борис Сонин on 30.11.2022.
 //
 
-import Foundation
-
 struct Team {
     let fullName: String
     let profession: String

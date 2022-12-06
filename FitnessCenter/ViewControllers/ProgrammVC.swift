@@ -9,17 +9,16 @@ import UIKit
 
 class ProgrammVC: UIViewController {
 
-    let kindOfProgram = DataStore.shared.kindOfProgramm
-    let danceProgram = DataStore.shared.danceProgramm
-    let slimmingProgram = DataStore.shared.slimmingProgramm
-    let fightingArtsProgram = DataStore.shared.fightingArtsProgramm
-    let gymProgram = DataStore.shared.gymProgramm
-    let swimmingProgram = DataStore.shared.swimmingProgramm
-    
-    
     @IBOutlet weak var levelPicker: UIPickerView!
-    
     @IBOutlet weak var programImageView: UIImageView!
+    
+    var kindOfProgram: [String] = []
+    var danceProgram: [String] = []
+    var slimmingProgram: [String] = []
+    var fightingArtsProgram: [String] = []
+    var gymProgram: [String] = []
+    var swimmingProgram: [String] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -118,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				5F167A77293DC37D00FC223E /* Main.storyboard */,
-				C720BD71293B812A00CF4CB7 /* MyCollectionViewCell.swift */,
 				7F873533292CC23D0022E19D /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;

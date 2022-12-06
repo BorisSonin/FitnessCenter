@@ -5,8 +5,7 @@
 //  Created by Алишер Маликов on 30.11.2022.
 //
 
-import UIKit
-
+import Foundation
 // MARK: - Основные данные приложения
 struct ProgrammName {
     let kindOfProgramm: String
