@@ -36,7 +36,7 @@ class LogInViewController: UIViewController {
     @IBAction func logInPressed() {
         guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
             showAlert(
-                title: "Неверное Имя Пользователя или Пароль",
+                title: "Неверное Имя или Пароль",
                 message: "Пожалуйста, введите верные данные"
             )
             return
