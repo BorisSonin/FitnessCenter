@@ -5,13 +5,26 @@
 //  Created by Алишер Маликов on 30.11.2022.
 //
 
+import UIKit
+
 // MARK: - Основные данные приложения
 struct ProgrammName {
-    let nameProgramm: String
-    let desctiption: String
-    let time: String
     let kindOfProgramm: String
-    let complexity: String
+    let danceProgram: String
+    let slimmingProgram: String
+    let fightingArtsProgram: String
+    let gymProgram: String
+    let swimmingProgram: String
+    let workingTime: String
+    
+}
+struct Schedule {
+    let time: String
+    let name: String
+    
+    var title: String {
+        "\(time) - \(name)"
+    }
 }
 
 // MARK: - Расширения для структур/создание экземпляров
@@ -19,30 +32,87 @@ extension ProgrammName {
     static func getProgrammName() -> [ProgrammName] {
         var programmName: [ProgrammName] = []
         
-        let nameProgramm = DataStore.shared.nameProgramm
-        let desctiption = DataStore.shared.description
-        let time = DataStore.shared.time
-        let complexity = DataStore.shared.complexity
         let kindOfProgramm = DataStore.shared.kindOfProgramm
-        
+        let danceProgram = DataStore.shared.danceProgramm
+        let slimmingProgram = DataStore.shared.slimmingProgramm
+        let fightingArtsProgram = DataStore.shared.fightingArtsProgramm
+        let gymProgram = DataStore.shared.gymProgramm
+        let swimmingProgram = DataStore.shared.swimmingProgramm
+        let workingTime = DataStore.shared.workingTime
         
         let iterationCount = min(
-            nameProgramm.count,
-            desctiption.count,
-            time.count,
-            complexity.count,
-            kindOfProgramm.count
+            gymProgram.count,
+            danceProgram.count,
+            fightingArtsProgram.count,
+            swimmingProgram.count,
+            kindOfProgramm.count,
+            workingTime.count
         )
         
         for index in 0..<iterationCount {
-            programmName.append(ProgrammName(nameProgramm: nameProgramm[index],
-                                             desctiption: desctiption[index],
-                                             time: time[index],
-                                             kindOfProgramm:kindOfProgramm[index],
-                                             complexity: complexity[index]
+            programmName.append(ProgrammName(kindOfProgramm: kindOfProgramm[index],
+                                             danceProgram: danceProgram[index],
+                                             slimmingProgram: swimmingProgram[index],
+                                             fightingArtsProgram: fightingArtsProgram[index],
+                                             gymProgram: gymProgram[index],
+                                             swimmingProgram: slimmingProgram[index],
+                                             workingTime: workingTime[index]
                                             ))
         }
         return programmName
+    }
+}
+extension Schedule {
+    static func getScheduleList(date: Date) -> [Schedule] {
+        let kindOfProgramm = DataStore.shared.kindOfProgramm
+        let workingTime = DataStore.shared.workingTime
         
+        let dateFormatter = DateFormatter()
+        var weekday: String = ""
+        dateFormatter.dateFormat = "ccc"
+        weekday = dateFormatter.string(from: date)
+        print(weekday)
+        switch weekday {
+        case "Пн": return [
+            Schedule(time: workingTime[0], name: kindOfProgramm[4]),
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+            Schedule(time: workingTime[2], name: kindOfProgramm[1]),
+            Schedule(time: workingTime[3], name: kindOfProgramm[0])
+        ]
+        case "Вт": return [
+            Schedule(time: workingTime[0], name: kindOfProgramm[4]),
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+        ]
+        case "Ср": return [
+            Schedule(time: workingTime[0], name: kindOfProgramm[4]),
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+            Schedule(time: workingTime[2], name: kindOfProgramm[1]),
+            Schedule(time: workingTime[3], name: kindOfProgramm[0])
+            ]
+        case "Чт": return [
+            Schedule(time: workingTime[0], name: kindOfProgramm[4]),
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+            Schedule(time: workingTime[2], name: kindOfProgramm[1]),
+            Schedule(time: workingTime[3], name: kindOfProgramm[0])
+        ]
+        case "Пт": return [
+            Schedule(time: workingTime[2], name: kindOfProgramm[1]),
+            Schedule(time: workingTime[3], name: kindOfProgramm[0])
+        ]
+        case "Сб": return [
+            Schedule(time: workingTime[0], name: kindOfProgramm[3]),
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+            Schedule(time: workingTime[2], name: kindOfProgramm[1])
+        ]
+        case "Вс": return [
+            Schedule(time: workingTime[1], name: kindOfProgramm[2]),
+        ]
+        default:
+           return [Schedule(time: "Выходной.", name: "Санитарный день")]
+        }
     }
 }
