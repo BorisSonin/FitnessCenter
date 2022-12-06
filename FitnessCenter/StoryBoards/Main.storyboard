@@ -27,21 +27,21 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="8hm-GA-yDq">
-                                        <rect key="frame" x="119.66666666666666" y="444" width="121.66666666666666" height="120"/>
+                                        <rect key="frame" x="120.66666666666666" y="444" width="120" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="alD-K9-KSW">
-                                                <rect key="frame" x="0.0" y="0.0" width="121.66666666666667" height="76.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="76.666666666666671"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rev-Xb-5W6">
-                                                        <rect key="frame" x="1" y="0.0" width="119.66666666666667" height="34.333333333333336"/>
+                                                        <rect key="frame" x="1" y="0.0" width="118" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="gray" title="Программы"/>
+                                                        <buttonConfiguration key="configuration" style="gray" title="Услуги"/>
                                                         <connections>
                                                             <segue destination="DAm-Ih-2IM" kind="show" id="r5a-oM-1T6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEZ-FU-pZU">
-                                                        <rect key="frame" x="1" y="42.333333333333371" width="120" height="34.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="42.333333333333371" width="120" height="34.333333333333343"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Расписание"/>
                                                         <connections>
@@ -54,7 +54,7 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-GJ-FZF">
-                                                <rect key="frame" x="0.0" y="85.666666666666629" width="121.66666666666667" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="85.666666666666629" width="120" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="О клубе"/>
                                                 <connections>
