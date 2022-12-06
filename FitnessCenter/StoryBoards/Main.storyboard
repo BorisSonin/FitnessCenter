@@ -777,7 +777,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eS-x8-ni5">
                                 <rect key="frame" x="44.666666666666657" y="763.66666666666663" width="304.33333333333337" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Комманда разработчиков"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Команда разработчиков"/>
                                 <connections>
                                     <segue destination="Bgk-pM-NYf" kind="presentation" id="oK3-ON-9aM"/>
                                 </connections>
