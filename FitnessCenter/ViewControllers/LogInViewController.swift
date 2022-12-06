@@ -36,8 +36,8 @@ class LogInViewController: UIViewController {
     @IBAction func logInPressed() {
         guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
             showAlert(
-                title: "Invalid login or password",
-                message: "Please, enter correct login and password"
+                title: "Неверное Имя Пользователя или Пароль",
+                message: "Пожалуйста, введите верные данные"
             )
             return
         }
@@ -47,8 +47,8 @@ class LogInViewController: UIViewController {
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(title: "Oops!", message: "Your name is \"\(user.login)\"")
-        : showAlert(title: "Oops!", message: "Your password is \"\(user.password)\"")
+        ? showAlert(title: "Oops!", message: "Ваше имя пользователя \"\(user.login)\"")
+        : showAlert(title: "Oops!", message: "Ваш Пароль \"\(user.password)\"")
         
     }
     
