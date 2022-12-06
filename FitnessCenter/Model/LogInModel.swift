@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  LogInModel.swift
 //  FitnessCenter
 //
 //  Created by Алишер Маликов on 01.12.2022.

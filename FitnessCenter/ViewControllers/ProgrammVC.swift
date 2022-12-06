@@ -8,50 +8,48 @@
 import UIKit
 
 class ProgrammVC: UIViewController {
-
+    
+    // MARK: - IBOutlets
     @IBOutlet weak var levelPicker: UIPickerView!
     @IBOutlet weak var programImageView: UIImageView!
     
-    var kindOfProgram: [String] = []
-    var danceProgram: [String] = []
-    var slimmingProgram: [String] = []
-    var fightingArtsProgram: [String] = []
-    var gymProgram: [String] = []
-    var swimmingProgram: [String] = []
-
+    var programmName: ProgrammName!
     
+    // MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         levelPicker.dataSource = self
         levelPicker.delegate = self
         setImage(name: "Танго")
-        
-        
 
     }
+    
     func setImage(name: String) {
         guard let newImage = UIImage(named: name) else { return }
         programImageView.image = newImage
     }
 }
 
+    // MARK: - Протоколы
 extension ProgrammVC: UIPickerViewDataSource {
+
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         2
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        let bigestCountOfPrograms = [danceProgram.count,
-                                     slimmingProgram.count,
-                                     fightingArtsProgram.count,
-                                     gymProgram.count,
-                                     swimmingProgram.count
+        let bigestCountOfPrograms = [programmName.danceProgramm.count,
+                                     programmName.slimmingProgramm.count,
+                                     programmName.fightingArtsProgramm.count,
+                                     programmName.gymProgramm.count,
+                                     programmName.swimmingProgramm.count
         ]
         
         let maxValue = bigestCountOfPrograms.max()
         
         if component == 0 {
-            return kindOfProgram.count
+            return programmName.kindOfProgramm.count
         } else {
              return maxValue!
         }
@@ -61,18 +59,18 @@ extension ProgrammVC: UIPickerViewDataSource {
 extension ProgrammVC: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if component == 0 {
-            return kindOfProgram[row]
+            return programmName.kindOfProgramm[row]
         } else {
             if pickerView.selectedRow(inComponent: 0) == 0 {
-                return danceProgram[row]
+                return programmName.danceProgramm[row]
             } else if  pickerView.selectedRow(inComponent: 0) == 1 {
-                return slimmingProgram[row]
+                return programmName.slimmingProgramm[row]
             } else if pickerView.selectedRow(inComponent: 0) == 2 {
-                return fightingArtsProgram[row]
+                return programmName.fightingArtsProgramm[row]
             } else if pickerView.selectedRow(inComponent: 0) == 3  {
-                return gymProgram[row]
+                return programmName.gymProgramm[row]
             } else {
-               return swimmingProgram[row]
+                return programmName.swimmingProgramm[row]
             }
         }
     }
@@ -80,27 +78,27 @@ extension ProgrammVC: UIPickerViewDelegate {
         if component == 0 {
             pickerView.reloadComponent(1)
             if pickerView.selectedRow(inComponent: 0) == 0 {
-                setImage(name: danceProgram[pickerView.selectedRow(inComponent: 1)])
+                setImage(name: programmName.danceProgramm[pickerView.selectedRow(inComponent: 1)])
             } else if pickerView.selectedRow(inComponent: 0) == 1 {
-                setImage(name: slimmingProgram[pickerView.selectedRow(inComponent: 1)])
+                setImage(name: programmName.slimmingProgramm[pickerView.selectedRow(inComponent: 1)])
             } else if pickerView.selectedRow(inComponent: 0) == 2 {
-                setImage(name: fightingArtsProgram[pickerView.selectedRow(inComponent: 1)])
+                setImage(name: programmName.fightingArtsProgramm[pickerView.selectedRow(inComponent: 1)])
             } else if pickerView.selectedRow(inComponent: 0) == 3 {
-                setImage(name: gymProgram[pickerView.selectedRow(inComponent: 1)])
+                setImage(name: programmName.gymProgramm[pickerView.selectedRow(inComponent: 1)])
             } else {
-                setImage(name: swimmingProgram[pickerView.selectedRow(inComponent: 1)])
+                setImage(name: programmName.swimmingProgramm[pickerView.selectedRow(inComponent: 1)])
             }
         } else {
             if pickerView.selectedRow(inComponent: 0) == 0 {
-                setImage(name: danceProgram[row])
+                setImage(name: programmName.danceProgramm[row])
             } else if pickerView.selectedRow(inComponent: 0) == 1 {
-                setImage(name: slimmingProgram[row])
+                setImage(name: programmName.slimmingProgramm[row])
             } else if pickerView.selectedRow(inComponent: 0) == 2 {
-                setImage(name: fightingArtsProgram[row])
+                setImage(name: programmName.fightingArtsProgramm[row])
             } else if pickerView.selectedRow(inComponent: 0) == 3 {
-                setImage(name: gymProgram[row])
+                setImage(name: programmName.gymProgramm[row])
             } else {
-                setImage(name: swimmingProgram[row])
+                setImage(name: programmName.swimmingProgramm[row])
             }
         }
     }

@@ -7,6 +7,17 @@
 
 import Foundation
 // MARK: - Основные данные приложения
+struct ProgrammName {
+    let kindOfProgramm: [String]
+    let danceProgramm: [String]
+    let slimmingProgramm: [String]
+    let fightingArtsProgramm: [String]
+    let gymProgramm: [String]
+    let swimmingProgramm: [String]
+    let imageNames: [String]
+    let workingTime: [String]
+}
+
 struct Schedule {
     let time: String
     let name: String
@@ -17,10 +28,24 @@ struct Schedule {
 }
 
 // MARK: - Расширения для структур/создание экземпляров
+
+extension ProgrammName {
+    static func getNameProgrammName() -> ProgrammName {
+        ProgrammName(kindOfProgramm: DataStoreForProgrammAndSchedule.shared.kindOfProgramm,
+                     danceProgramm: DataStoreForProgrammAndSchedule.shared.danceProgramm,
+                     slimmingProgramm: DataStoreForProgrammAndSchedule.shared.slimmingProgramm,
+                     fightingArtsProgramm: DataStoreForProgrammAndSchedule.shared.fightingArtsProgramm,
+                     gymProgramm: DataStoreForProgrammAndSchedule.shared.gymProgramm,
+                     swimmingProgramm: DataStoreForProgrammAndSchedule.shared.swimmingProgramm,
+                     imageNames: DataStoreForProgrammAndSchedule.shared.imageNames,
+                     workingTime: DataStoreForProgrammAndSchedule.shared.workingTime)
+    }
+}
+
 extension Schedule {
     static func getScheduleList(date: Date) -> [Schedule] {
-        let kindOfProgramm = DataStore.shared.kindOfProgramm
-        let workingTime = DataStore.shared.workingTime
+        let kindOfProgramm = DataStoreForProgrammAndSchedule.shared.kindOfProgramm
+        let workingTime = DataStoreForProgrammAndSchedule.shared.workingTime
         
         let dateFormatter = DateFormatter()
         var weekday: String = ""

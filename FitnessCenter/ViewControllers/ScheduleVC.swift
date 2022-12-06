@@ -9,23 +9,21 @@ import UIKit
 
 class ScheduleVC: UIViewController {
     
-    
-    let kindOfProgramm = DataStore.shared.kindOfProgramm
-    let imageNames = DataStore.shared.imageNames
-    var images = [UIImage]()
-    var scheduleList = Schedule.getScheduleList(date: Date())
-    
+    // MARK: - IBOutlets
     @IBOutlet weak var changingView: UIImageView!
-    
     @IBOutlet weak var datePicker: UIDatePicker!
-    
     @IBOutlet weak var scheduleTableView: UITableView!
     
+    var programmName: ProgrammName!
+    var images = [UIImage]()
+    var scheduleList: [Schedule]!
+    
+    // MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        for i in 0..<imageNames.count {
-            images.append(UIImage(named: imageNames[i]) ?? UIImage())
+        for i in 0..<programmName.imageNames.count {
+            images.append(UIImage(named: programmName.imageNames[i]) ?? UIImage())
         }
         changingView.animationImages = images
         changingView.animationDuration = 60.0
@@ -33,22 +31,21 @@ class ScheduleVC: UIViewController {
         
         datePicker.addTarget(self, action: #selector(dateSelected), for: .valueChanged)
     }
+    
+    // MARK: - IBActions
     @IBAction func datePickerChangedVaue(_ sender: UIDatePicker) {
         scheduleList = Schedule.getScheduleList(date: sender.date)
         scheduleTableView.reloadData()
     }
     
-    @objc
-    func dateSelected() {
+    @objc func dateSelected() {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .none
-        
     }
-
-
 }
 
+    // MARK: - Протоколы
 extension ScheduleVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         scheduleList.count

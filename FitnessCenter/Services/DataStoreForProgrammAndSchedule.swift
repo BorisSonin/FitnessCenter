@@ -1,12 +1,12 @@
 //
-//  DataStore.swift
+//  DataStoreForProgrammAndSchedule.swift
 //  FitnessCenter
 //
 //  Created by Алишер Маликов on 30.11.2022.
 //
 
-class DataStore {
-    static let shared = DataStore()
+class DataStoreForProgrammAndSchedule {
+    static let shared = DataStoreForProgrammAndSchedule()
     
     let kindOfProgramm = [
         "Танцы",

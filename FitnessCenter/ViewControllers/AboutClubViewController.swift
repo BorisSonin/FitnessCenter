@@ -10,13 +10,11 @@ import UIKit
 class AboutClubViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
-    
     @IBOutlet var aboutClub: UITextView!
     
     private var myImage = [UIImage(named: "1"),
                            UIImage(named: "2"),
-                           UIImage(named: "3")
-    ]
+                           UIImage(named: "3")]
     
     override func viewDidLoad() {
         collectionView.dataSource = self

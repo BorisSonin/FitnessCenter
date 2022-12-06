@@ -11,14 +11,14 @@ import UIKit
 
 class ContactVC: UIViewController {
 
-    
+    // MARK: - IBOutlets
     @IBOutlet var adressLabel: UILabel!
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var workHourseLabel: UILabel!
-
     
     var center: Contacts!
     
+    // MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         adressLabel.text = center.address
@@ -27,13 +27,13 @@ class ContactVC: UIViewController {
     }
     
 
-// MARK: - IBAction
+    // MARK: - IBAction
     @IBAction func backCallButton() {
         showAlert(withTitle: "Дорогой клиент!", andMessage: "Наш оператор свяжется с Вами в ближайшее время!")
     }
 }
 
-// MARK: - Extension
+    // MARK: - Extension
 extension ContactVC {
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
