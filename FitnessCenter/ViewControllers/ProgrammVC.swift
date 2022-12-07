@@ -33,7 +33,6 @@ class ProgrammVC: UIViewController {
     // MARK: - Протоколы
 extension ProgrammVC: UIPickerViewDataSource {
 
-    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         2
     }
@@ -43,8 +42,7 @@ extension ProgrammVC: UIPickerViewDataSource {
                                      programmName.slimmingProgramm.count,
                                      programmName.fightingArtsProgramm.count,
                                      programmName.gymProgramm.count,
-                                     programmName.swimmingProgramm.count
-        ]
+                                     programmName.swimmingProgramm.count]
         
         let maxValue = bigestCountOfPrograms.max()
         

@@ -38,7 +38,6 @@ extension ContactVC {
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ок", style: .default) { _ in
-           // self.textField.text = ""
         }
         alert.addAction(okAction)
         present(alert, animated: true)

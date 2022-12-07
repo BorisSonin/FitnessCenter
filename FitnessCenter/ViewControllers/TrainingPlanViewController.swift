@@ -48,10 +48,8 @@ extension TrainingPlanViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrainingPlanCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         let trainingPlan = training[indexPath.row]
-        
         content.text = trainingPlan
         cell.contentConfiguration = content
-        
         return cell
     }
     

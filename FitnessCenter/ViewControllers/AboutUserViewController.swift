@@ -36,7 +36,6 @@ class AboutUserViewController: UIViewController {
             updateUISecondSegment()
         }
     }
-    
 }
 
 extension AboutUserViewController {
@@ -55,7 +54,6 @@ extension AboutUserViewController {
     private func updateUISecondSegment() {
         firstStackView.isHidden = true
         secondStackView.isHidden = false
-        
 
         let imt = (Double(user.person.weigth) / pow(Double(user.person.height) / 100, 2))
         

@@ -17,10 +17,9 @@ class AboutClubViewController: UIViewController {
                            UIImage(named: "3")]
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-        super.viewDidLoad()
-        
         aboutClub.text = information
     }
 }
